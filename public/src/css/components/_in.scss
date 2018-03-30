@@ -1,0 +1,55 @@
+.in{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width:100%;
+  min-width: 290px;
+  max-width:300px;
+  margin:auto;
+  &-form{
+    &_title{
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.5 * $font;
+      margin-bottom: $unit;
+    }
+    &_input{
+      position: relative;
+      .label{
+        display: block;
+        margin-bottom: 5px;
+      }
+      .input{
+        width: 100%;
+        border: 1px solid $gray;
+        padding: 0 $unit;
+        height: 3 * $unit;
+        font-size: $font + 1;
+        margin-bottom:2 * $unit;
+        display: block;
+      }
+      .submit{
+        width:100%;
+        display: block;
+        border:2px solid $blue;
+        background-color: lighten($blue, 10%);
+        height: 3 * $unit;
+        color: white;
+        font-size: $font + 1;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+          background-color: $blue;
+        }
+      }
+      .error{
+        color:$red;
+        position: absolute;
+        top: calc(100% + #{.3 * $unit});
+        left: 0;
+      }
+    }
+  }
+}

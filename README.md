@@ -1,2 +1,2 @@
-# AdonisJs + LucidMongo + Swagger jsdoc Application
+# AdonisJs + LucidMongo + Swagger + React
 
